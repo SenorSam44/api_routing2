@@ -17,8 +17,18 @@
                         <router-link :to="{ name: 'Home' }">Home</router-link>
                     </li>
                     <li class="nav-item mx-2">
-                        <router-link :to="{ name: 'About' }">About</router-link>
+                        <router-link :to="{ name: 'Post' }">Post</router-link>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-2">
+                        <router-link :to="{ name: 'Register' }">Register</router-link>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <router-link :to="{ name: 'Login' }">Login</router-link>
+                    </li>
+
                 </ul>
             </div>
         </div>

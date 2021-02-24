@@ -3,10 +3,10 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import About from '../views/About'
 import Home from '../views/Home'
-
-console.log('router index');
+import Register from "../views/Register";
+import Login from "../views/Login";
+import Post from "../views/Post";
 
 const router = new VueRouter({
     mode: 'history',
@@ -17,9 +17,19 @@ const router = new VueRouter({
             component: Home
         },
         {
-            path: '/about',
-            name: 'About',
-            component: About,
+            path: '/register',
+            name: 'Register',
+            component: Register,
+        },
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
+        },
+        {
+            path: '/post',
+            name: 'Post',
+            component: Post,
         },
     ],
 });
